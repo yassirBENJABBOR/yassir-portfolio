@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b18" />
+    <meta name="description" content="Yassir Benjabbor — Full Stack Web Developer portfolio." />
+    <title>Yassir Benjabbor — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+          <a class="brand" href="#home" aria-label="Yassir home"><span class="brand-mark">YB</span><span>Yassir<span class="brand-dot">.</span></span></a>
+          <button class="mobile-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+          <div class="nav-links" id="nav-links">
+            <a href="#home" data-i18n="navHome">Home</a>
+            <a href="#about" data-i18n="navAbout">About</a>
+            <a href="#skills" data-i18n="navSkills">Skills</a>
+            <a href="#projects" data-i18n="navProjects">Projects</a>
+            <a href="#experience" data-i18n="navExperience">Experience</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
+          </div>
+          <div class="nav-actions">
+            <button class="icon-button language-button" id="language-toggle" aria-label="Change language">FR</button>
+            <button class="icon-button" id="theme-toggle" aria-label="Toggle color theme"><span id="theme-icon">☀</span></button>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section" id="home">
+          <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <div class="eyebrow"><span class="status-dot"></span><span data-i18n="eyebrow">WELCOME TO MY DIGITAL SPACE</span></div>
+              <p class="hero-kicker" data-i18n="hello">Hello, I'm</p>
+              <h1>Yassir <span class="gradient-text">Benjabbor</span></h1>
+              <h2><span data-i18n="rolePrefix">Full Stack</span> <span class="gradient-text" id="typed-role">Web Developer</span><span class="typing-caret">|</span></h2>
+              <p class="hero-description" data-i18n="heroDescription">I build modern, responsive web experiences and turn ideas into useful digital products. Always learning, always creating.</p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#projects"><span data-i18n="seeProjects">Explore my projects</span><span>↗</span></a>
+                <a class="button button-secondary" href="#contact"><span data-i18n="contactMe">Let's talk</span><span>✉</span></a>
+              </div>
+              <div class="social-row">
+                <a class="social-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+                <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+                <a class="social-link" href="mailto:hello@example.com" aria-label="Email">@</a>
+                <span class="social-note" data-i18n="basedIn">Based in Fès, Morocco</span>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal">
+              <div class="visual-grid"></div>
+              <div class="portrait-halo"></div>
+              <div class="portrait-frame tilt-card">
+                <div class="portrait-topline"><span></span><span></span><span></span><small>YASSIR.DEV</small></div>
+                <div class="portrait-wrap">
+                  <img src="./images/yassir.png" alt="Portrait of Yassir Benjabbor" class="portrait" onerror="this.style.display='none';document.querySelector('.portrait-placeholder').style.display='grid'">
+                  <div class="portrait-placeholder"><span>YB</span><small>Add your portrait to public/images/yassir.png</small></div>
+                </div>
+              </div>
+              <div class="float-chip chip-html"><b class="tech-icon html-icon">5</b><span>HTML</span></div>
+              <div class="float-chip chip-js"><b class="tech-icon js-icon">JS</b><span>JavaScript</span></div>
+              <div class="float-chip chip-css"><b class="tech-icon css-icon">3</b><span>CSS</span></div>
+              <div class="float-chip chip-code">&lt;/&gt;</div>
+              <div class="visual-caption"><span class="caption-line"></span><span data-i18n="visualCaption">Building the web, one idea at a time.</span></div>
+            </div>
+          </div>
+          <a href="#about" class="scroll-cue"><span></span><small data-i18n="scroll">SCROLL TO EXPLORE</small></a>
+        </section>
+
+        <section class="section section-soft" id="about">
+          <div class="container">
+            <div class="section-heading reveal"><span class="section-label" data-i18n="aboutLabel">A LITTLE ABOUT ME</span><h2 data-i18n="aboutTitle">Curious mind. <span class="gradient-text">Creative builder.</span></h2><p data-i18n="aboutIntro">I enjoy solving problems and creating digital experiences that make a difference.</p></div>
+            <div class="about-grid">
+              <article class="glass-card about-card reveal">
+                <div class="card-icon">✦</div><h3 data-i18n="whoTitle">Who I am</h3>
+                <p data-i18n="aboutText">I'm Yassir, a web development enthusiast focused on building clean, responsive and user-friendly applications. I enjoy learning new technologies, collaborating with others and turning challenges into opportunities to grow.</p>
+                <div class="traits"><span>↗ <span data-i18n="trait1">Problem solver</span></span><span>✧ <span data-i18n="trait2">Team player</span></span><span>∞ <span data-i18n="trait3">Continuous learner</span></span></div>
+              </article>
+              <article class="glass-card stats-card reveal">
+                <div class="stat"><strong>01</strong><span data-i18n="statProjects">Curiosity-driven mindset</span></div>
+                <div class="stat"><strong>02</strong><span data-i18n="statLearning">Learning by building</span></div>
+                <div class="stat"><strong>∞</strong><span data-i18n="statGrowth">Room to grow</span></div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="skills">
+          <div class="container">
+            <div class="section-heading reveal"><span class="section-label" data-i18n="skillsLabel">MY TOOLKIT</span><h2 data-i18n="skillsTitle">Technologies I <span class="gradient-text">work with</span></h2><p data-i18n="skillsIntro">Tools I use and technologies I'm actively improving.</p></div>
+            <div class="skills-grid">
+              <article class="skill-card reveal"><span class="skill-symbol html-icon">5</span><h3>HTML5</h3><p>Semantic structure</p></article>
+              <article class="skill-card reveal"><span class="skill-symbol css-icon">3</span><h3>CSS3</h3><p>Responsive styling</p></article>
+              <article class="skill-card reveal"><span class="skill-symbol js-icon">JS</span><h3>JavaScript</h3><p>Interactive interfaces</p></article>
+              <article class="skill-card reveal"><span class="skill-symbol tw-icon">≈</span><h3>Tailwind CSS</h3><p>Utility-first CSS</p></article>
+              <article class="skill-card reveal"><span class="skill-symbol php-icon">PHP</span><h3>PHP</h3><p>Server-side basics</p></article>
+              <article class="skill-card reveal"><span class="skill-symbol laravel-icon">L</span><h3>Laravel</h3><p>Web applications</p></article>
+              <article class="skill-card reveal"><span class="skill-symbol db-icon">▤</span><h3>MySQL</h3><p>Relational databases</p></article>
+              <article class="skill-card reveal"><span class="skill-symbol git-icon">⌘</span><h3>Git & GitHub</h3><p>Version control</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-soft" id="projects">
+          <div class="container">
+            <div class="section-heading reveal"><span class="section-label" data-i18n="projectsLabel">SELECTED WORK</span><h2 data-i18n="projectsTitle">Things I've <span class="gradient-text">been building</span></h2><p data-i18n="projectsIntro">A few projects that reflect my learning journey and interests.</p></div>
+            <div class="projects-grid">
+              <article class="project-card glass-card reveal">
+                <div class="project-art art-academy"><span class="art-orbit"></span><span class="art-window"><i></i><i></i><i></i><b>NA</b><small>NOUR ACADEMY</small></span><span class="art-tag">EDTECH</span></div>
+                <div class="project-content"><div class="project-meta"><span>01 / EDUCATION</span><span>2026</span></div><h3>Nour Academy</h3><p data-i18n="projectAcademy">An educational management interface concept for organizing students, groups and attendance.</p><div class="tag-list"><span>HTML</span><span>Tailwind</span><span>JavaScript</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#contact" data-i18n="projectDetails">Project details ↗</a></div></div>
+              </article>
+              <article class="project-card glass-card reveal">
+                <div class="project-art art-jobs"><span class="job-window"><b>JOB BOARD</b><i></i><i></i><i></i><small>Find your next opportunity</small></span><span class="art-tag">CAREER</span></div>
+                <div class="project-content"><div class="project-meta"><span>02 / WEB APP</span><span>2026</span></div><h3>Job Board</h3><p data-i18n="projectJobs">A job-offer management application concept with candidate and company workflows.</p><div class="tag-list"><span>Laravel</span><span>PHP</span><span>MySQL</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#contact" data-i18n="projectDetails">Project details ↗</a></div></div>
+              </article>
+              <article class="project-card glass-card reveal">
+                <div class="project-art art-creative"><span class="creative-cube">✳</span><span class="creative-ring"></span><span class="art-tag">EXPERIMENT</span></div>
+                <div class="project-content"><div class="project-meta"><span>03 / CREATIVE</span><span>2026</span></div><h3>Creative Experiments</h3><p data-i18n="projectCreative">Small front-end experiments exploring layout, motion, responsive design and interactions.</p><div class="tag-list"><span>CSS</span><span>JavaScript</span><span>UI</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#contact" data-i18n="projectDetails">Project details ↗</a></div></div>
+              </article>
+            </div>
+            <p class="notice reveal" data-i18n="projectNotice">Note: replace the sample project links with your real GitHub repositories and live demos.</p>
+          </div>
+        </section>
+
+        <section class="section" id="experience">
+          <div class="container">
+            <div class="section-heading reveal"><span class="section-label" data-i18n="journeyLabel">MY JOURNEY</span><h2 data-i18n="journeyTitle">Experience & <span class="gradient-text">education</span></h2><p data-i18n="journeyIntro">A snapshot of the experiences that have shaped my path.</p></div>
+            <div class="journey-grid">
+              <div class="journey-column reveal"><h3><span>✦</span><span data-i18n="experienceTitle">Experience</span></h3>
+                <article class="timeline-item"><span class="timeline-dot"></span><small>2025 — 2026</small><h4>Concentrix</h4><p data-i18n="concentrixRole">Technical Support Agent · 5 months</p></article>
+                <article class="timeline-item"><span class="timeline-dot"></span><small>2025</small><h4>AST</h4><p data-i18n="astRole">Internship · 2 months</p></article>
+              </div>
+              <div class="journey-column reveal"><h3><span>⌘</span><span data-i18n="educationTitle">Education</span></h3>
+                <article class="timeline-item"><span class="timeline-dot"></span><small>2026 — Present</small><h4>YouCode School</h4><p data-i18n="youcodeRole">Programming & Artificial Intelligence</p></article>
+                <article class="timeline-item"><span class="timeline-dot"></span><small>2023 — 2025</small><h4>ISTA</h4><p data-i18n="istaRole">Full Stack Web Development</p></article>
+                <article class="timeline-item"><span class="timeline-dot"></span><small>2023</small><h4>Baccalaureate</h4><p data-i18n="bacRole">High school diploma</p></article>
+              </div>
+            </div>
+            <p class="notice reveal" data-i18n="datesNotice">Please verify dates and titles before publishing your portfolio.</p>
+          </div>
+        </section>
+
+        <section class="section contact-section section-soft" id="contact">
+          <div class="container contact-grid">
+            <div class="reveal"><span class="section-label" data-i18n="contactLabel">LET'S CONNECT</span><h2 data-i18n="contactTitle">Have an idea?<br><span class="gradient-text">Let's build it.</span></h2><p data-i18n="contactIntro">I'm open to learning opportunities, internships and interesting collaborations.</p><a class="contact-email" href="mailto:hello@example.com">hello@example.com ↗</a><small class="notice" data-i18n="emailNotice">Replace this sample email with your real email address.</small></div>
+            <form class="glass-card contact-form reveal" id="contact-form">
+              <label for="name" data-i18n="formName">Your name</label><input id="name" name="name" required placeholder="Jane Doe">
+              <label for="email" data-i18n="formEmail">Your email</label><input id="email" name="email" type="email" required placeholder="jane@example.com">
+              <label for="message" data-i18n="formMessage">Your message</label><textarea id="message" name="message" rows="5" required placeholder="Tell me about your idea..."></textarea>
+              <button class="button button-primary" type="submit"><span data-i18n="sendMessage">Send message</span><span>↗</span></button>
+              <p class="form-feedback" id="form-feedback" role="status"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">YB</span><span>Yassir<span class="brand-dot">.</span></span></a><p>© <span id="year"></span> Yassir Benjabbor. <span data-i18n="rights">Made with curiosity & code.</span></p><a href="#home" class="back-top" data-i18n="backTop">Back to top ↑</a></div></footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
